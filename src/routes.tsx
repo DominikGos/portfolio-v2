@@ -6,6 +6,6 @@ export interface AppRoute {
     element: JSX.Element;
   }
   
-export const routes: AppRoute[] = [
-    { path : '/', element: <Home /> },
-];
+export const routes: Record<string, AppRoute> = {
+    home: { path : '/', element: <Home /> },
+};
