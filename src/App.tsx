@@ -1,21 +1,16 @@
-import { use, useState } from 'react'
+import { Route, Routes } from "react-router-dom"
+import { routes } from "./routes"
 
 function App() {
-  const [count, setCount] = useState<number>(0);
-
-  const increment = (): void => {
-    setCount((prevCount) => prevCount + 1);
-  }
-  
-  return (
-
-    <>
-      <h1 className="font-bold">Portfolio</h1>
-      <button onClick={increment}>
-        count is {count}
-      </button>
-    </>
-  )
+  return <Routes>
+    {routes.map((route, index) => (
+      <Route
+        key={index}
+        path={route.path}
+        element={route.element}
+      />
+    ))}
+  </Routes>
 }
 
 export default App
