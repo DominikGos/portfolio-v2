@@ -1,7 +1,9 @@
+import Layout from "../layouts/layout"
+
 export default function Home() {
     return (
-        <>
-            <h1>Home</h1>
-        </>
+        <Layout>
+            home page
+        </Layout>
     )
 }
