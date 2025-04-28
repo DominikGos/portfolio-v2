@@ -1,14 +1,14 @@
 import React from 'react';
 
-const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  return (
-    <div className='bg-blue-950 w-full'>
-        <nav>
-            test nav 
-        </nav>
+interface LayoutProps {
+  children: React.ReactNode;
+  className?: string; 
+};
+
+const Layout = ({ children, className }: LayoutProps) => (
+    <div className={`w-full ${className}`}>
       {children}
     </div>
-  );
-}
+);
 
 export default Layout;
