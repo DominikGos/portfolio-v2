@@ -3,6 +3,7 @@ import Layout from "../layouts/Layout"
 import ContentLayout from "../layouts/ContentLayout"
 import ContentLayoutCol from "../layouts/ContentLayoutCol";
 import ContentLayoutRow from "../layouts/ContentLayoutRow";
+import Hover from "../components/Hover";
 
 export default function Home() {
   const navbarItems = [
@@ -23,7 +24,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="flex flex-col gap-4 md:w-3/4 xl:w-2/4">
+        <div className="flex flex-col gap-6 md:w-3/4 xl:w-2/4">
 
           <ContentLayout headline="" id="about-me">
             <p className="text-gray-200">
@@ -33,40 +34,52 @@ export default function Home() {
             
           <ContentLayout headline="Experience" id="experience">
             <ContentLayoutCol>
-              <ContentLayoutRow>
-                <p className="text-gray-200 min-w-[130px]">2024.07 - Present</p>
-                <p className="text-gray-200">Nitro Digital - Fullstack developer Developer</p>
-              </ContentLayoutRow>
-              <ContentLayoutRow>
-                <p className="text-gray-200 min-w-[130px]">2022.10 - 2024.11</p>
-                <p className="text-gray-200">Nitro Digital - Internship</p>
-              </ContentLayoutRow>
+              <Hover>
+                <ContentLayoutRow>
+                  <p className="text-gray-200 min-w-[130px]">2024.07 - Present</p>
+                  <p className="text-gray-200">Nitro Digital - Fullstack developer Developer</p>
+                </ContentLayoutRow>
+              </Hover>
+              <Hover>
+                <ContentLayoutRow>
+                  <p className="text-gray-200 min-w-[130px]">2022.10 - 2024.11</p>
+                  <p className="text-gray-200">Nitro Digital - Internship</p>
+                </ContentLayoutRow>
+              </Hover>
             </ContentLayoutCol>
           </ContentLayout>
    
           <ContentLayout headline="Education" id="education">
             <ContentLayoutCol>
-              <ContentLayoutRow>
-                <p className="text-gray-200 min-w-[130px]">2023.10 - Present</p>
-                <p className="text-gray-200">Kielce University of Technology</p>
-              </ContentLayoutRow>
-              <ContentLayoutRow>
-                <p className="text-gray-200 min-w-[130px]">2019.09 - 2023.06</p>
-                <p className="text-gray-200">Technical School Complex No. 7 Kielce</p>
-              </ContentLayoutRow>
+              <Hover>
+                <ContentLayoutRow>
+                  <p className="text-gray-200 min-w-[130px]">2023.10 - Present</p>
+                  <p className="text-gray-200">Kielce University of Technology</p>
+                </ContentLayoutRow>
+              </Hover>
+              <Hover>
+                <ContentLayoutRow>
+                  <p className="text-gray-200 min-w-[130px]">2019.09 - 2023.06</p>
+                  <p className="text-gray-200">Technical School Complex No. 7 Kielce</p>
+                </ContentLayoutRow>
+              </Hover>
             </ContentLayoutCol>
           </ContentLayout>
          
           <ContentLayout headline="Projects" id="projects">
             <ContentLayoutCol>
-              <ContentLayoutRow>
-                <p className="text-gray-200">Chat app</p>
-                <p className="text-gray-200">description, Git link</p>
-              </ContentLayoutRow>
-              <ContentLayoutRow>
-                <p className="text-gray-200">Forum</p>
-                <p className="text-gray-200">description, Git link</p>
-              </ContentLayoutRow>
+              <Hover>
+                <ContentLayoutRow>
+                  <p className="text-gray-200">Chat app</p>
+                  <p className="text-gray-200">description, Git link</p>
+                </ContentLayoutRow>
+              </Hover>
+              <Hover>
+                <ContentLayoutRow>
+                  <p className="text-gray-200">Forum</p>
+                  <p className="text-gray-200">description, Git link</p>
+                </ContentLayoutRow>
+              </Hover>
             </ContentLayoutCol>
           </ContentLayout>
           
