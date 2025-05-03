@@ -2,6 +2,7 @@ import MainNavbar from "../components/MainNavbar"
 import Layout from "../layouts/Layout"
 import ContentLayout from "../layouts/ContentLayout"
 import ContentLayoutCol from "../layouts/ContentLayoutCol";
+import ContentLayoutRow from "../layouts/ContentLayoutRow";
 
 export default function Home() {
   const navbarItems = [
@@ -31,35 +32,41 @@ export default function Home() {
           </ContentLayout>
             
           <ContentLayout headline="Experience" id="experience">
-            <ContentLayoutCol className="whitespace-nowrap">
-              <p className="text-gray-200">2024.07 - Present</p>
-              <p className="text-gray-200">2022.10 - 2024.11</p>
-            </ContentLayoutCol>
             <ContentLayoutCol>
-              <p className="text-gray-200">Nitro Digital - Fullstack developer Developer</p>
-              <p className="text-gray-200">Nitro Digital - Internship</p>
+              <ContentLayoutRow>
+                <p className="text-gray-200 min-w-[130px]">2024.07 - Present</p>
+                <p className="text-gray-200">Nitro Digital - Fullstack developer Developer</p>
+              </ContentLayoutRow>
+              <ContentLayoutRow>
+                <p className="text-gray-200 min-w-[130px]">2022.10 - 2024.11</p>
+                <p className="text-gray-200">Nitro Digital - Internship</p>
+              </ContentLayoutRow>
             </ContentLayoutCol>
           </ContentLayout>
-          
+   
           <ContentLayout headline="Education" id="education">
-            <ContentLayoutCol className="whitespace-nowrap">
-              <p className="text-gray-200">2023.10 - Present</p>
-              <p className="text-gray-200">2019.09 - 2023.06</p>
-            </ContentLayoutCol>
             <ContentLayoutCol>
-              <p className="text-gray-200">Kielce University of Technology</p>
-              <p className="text-gray-200">Technical School Complex No. 7 Kielce</p>
+              <ContentLayoutRow>
+                <p className="text-gray-200 min-w-[130px]">2023.10 - Present</p>
+                <p className="text-gray-200">Kielce University of Technology</p>
+              </ContentLayoutRow>
+              <ContentLayoutRow>
+                <p className="text-gray-200 min-w-[130px]">2019.09 - 2023.06</p>
+                <p className="text-gray-200">Technical School Complex No. 7 Kielce</p>
+              </ContentLayoutRow>
             </ContentLayoutCol>
           </ContentLayout>
          
           <ContentLayout headline="Projects" id="projects">
-            <ContentLayoutCol className="whitespace-nowrap">
-              <p className="text-gray-200">Chat app</p>
-              <p className="text-gray-200">Forum</p>
-            </ContentLayoutCol>
             <ContentLayoutCol>
-              <p className="text-gray-200">description, Git link</p>
-              <p className="text-gray-200">description, Git link</p>
+              <ContentLayoutRow>
+                <p className="text-gray-200">Chat app</p>
+                <p className="text-gray-200">description, Git link</p>
+              </ContentLayoutRow>
+              <ContentLayoutRow>
+                <p className="text-gray-200">Forum</p>
+                <p className="text-gray-200">description, Git link</p>
+              </ContentLayoutRow>
             </ContentLayoutCol>
           </ContentLayout>
           
